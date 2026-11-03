@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Auto Care - Cadastro de Utilizador e Veículo</title>
+    <link rel="stylesheet" type="text/css" href="../Codigo_CSS/estilos.css">
+</head>
+<body>
+<div id="site">
+    <header>
+        <h1>Auto Care</h1>
+        <p>Registo de Novo Utilizador e Veículo</p>
+    </header>
+    
+    <nav>
+        <h3>Menu Auto Care</h3>
+        <ul>
+            <li><a href="../Paginas/login.html">Login</a></li>
+            <li><a href="../Paginas/cadastrar.html">Registar Utilizador</a></li>
+            <li><a href="../Paginas/index.html">Início (Painel)</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Criar Conta no Auto Care</h2>
+            <article>
+                <h3>Formulário de Registo Completo</h3>
+                <p>Preencha os campos abaixo com as suas informações pessoais e os detalhes do seu automóvel.</p>
+                
+                <form action="login.html" method="get">
+                    <!-- Bloco de Dados do Utilizador -->
+                    <fieldset>
+                        <legend>Dados Pessoais do Utilizador</legend>
+                        
+                        <label for="nome">Nome Completo:</label><br>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome" required><br>
+
+                        <label for="idade">Idade:</label><br>
+                        <input type="number" id="idade" name="idade" placeholder="Ex: 30" required><br>
+
+                        <label for="email_cad">E-mail:</label><br>
+                        <input type="text" id="email_cad" name="email_cad" placeholder="seuemail@dominio.com" required><br>
+
+                        <label for="senha_cad">Senha:</label><br>
+                        <input type="password" id="senha_cad" name="senha_cad" placeholder="Crie uma senha" required><br>
+                    </fieldset>
+
+                    <!-- Bloco de Dados do Veículo -->
+                    <fieldset style="margin-top: 15px;">
+                        <legend>Dados do Veículo</legend>
+                        
+                        <label for="modelo">Modelo:</label><br>
+                        <input type="text" id="modelo" name="modelo" placeholder="Ex: Civic" required><br>
+
+                        <label for="marca">Marca:</label><br>
+                        <input type="text" id="marca" name="marca" placeholder="Ex: Honda" required><br>
+
+                        <label for="placa">Placa:</label><br>
+                        <input type="text" id="placa" name="placa" placeholder="Ex: QFA-1234" required><br>
+
+                        <label for="ano">Ano:</label><br>
+                        <input type="text" id="ano" name="ano" placeholder="Ex: 2024/2025" required><br>
+
+                        <label for="quilometragem">Quilometragem (km):</label><br>
+                        <input type="number" id="quilometragem" name="quilometragem" placeholder="Ex: 55000" required><br>
+
+                        <label for="data_manutencao">Data da Última Manutenção:</label><br>
+                        <input type="date" id="data_manutencao" name="data_manutencao" required><br>
+                    </fieldset>
+
+                    <p style="margin-top: 15px;">
+                        <input type="submit" value="Concluir Cadastro">
+                    </p>
+                </form>
+
+                <p style="text-align: center; margin-top: 15px;">
+                    Já possui uma conta? <a href="../Paginas/login.html" style="color: #2b6cb0; font-weight: bold;">Faça login aqui</a>.
+                </p>
+            </article>
+        </section>
+    </main>
+    <div class="clear"></div>
+    <footer>
+        <p>Auto Care &copy; 2026 - Todos os direitos reservados.</p>
+    </footer>
+</div>
+</body>
+</html>
