@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Auto Care - Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="Codigo_CSS/estilos.css">
+</head>
+<body>
+    
+<div id="site">
+    <header>
+        <h1>Auto Care</h1>
+        <p>Registo de Intervenções</p>
+    </header>
+    
+    <nav>
+        <h3>Menu Auto Care</h3>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="veiculo.html">Meu veículo</a></li>
+            <li><a href="manutencoes.html">Manutenções</a></li>
+            <li><a href="despesas.html">Despesas</a></li>
+            <li><a href="documentos.html">Documentos</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Formulário para Registrar uma Manutenção</h2>
+            <article>
+                <h3>Novo Registo Demonstrativo</h3>
+                <p>Preencha os campos abaixo para simular o registo de uma nova manutenção no sistema (sem persistência em base de dados).</p>
+                
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Dados da Manutenção</legend>
+                        
+                        <label for="servico">Tipo de Serviço:</label><br>
+                        <input type="text" id="servico" name="servico" placeholder="Ex: Troca de Correia" required><br>
+
+                        <label for="km">Quilometragem:</label><br>
+                        <input type="number" id="km" name="km" placeholder="Ex: 56000" required><br>
+
+                        <label for="data_manutencao">Data do Serviço:</label><br>
+                        <input type="date" id="data_manutencao" name="data_manutencao" required><br>
+
+                        <label for="custo">Custo Estimado (R$):</label><br>
+                        <input type="text" id="custo" name="custo" placeholder="Ex: 450,00"><br>
+
+                        <label for="categoria">Categoria:</label><br>
+                        <select id="categoria" name="categoria">
+                            <option value="preventiva">Manutenção Preventiva</option>
+                            <option value="corretiva">Manutenção Corretiva</option>
+                        </select><br>
+
+                        <label for="detalhes">Descrição Detalhada:</label><br>
+                        <textarea id="detalhes" name="detalhes" rows="3" placeholder="Informações adicionais..."></textarea><br>
+
+                        <input type="submit" value="Salvar Registo (Demonstração)">
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+    </main>
+    <div class="clear"></div>
+    <footer>
+        <p>Auto Care &copy; 2026 - Todos os direitos reservados.</p>
+    </footer>
+</div>
+</body>
+</html>
