@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>Auto Care - Manutenções</title>
     <link rel="stylesheet" type="text/css" href="../Codigo_CSS/estilos.css">
 </head>
+
 <body>
 
 <div id="site">
@@ -30,7 +32,7 @@
             <h2>Histórico de Revisões e Serviços</h2>
             <article>
                 <h3>Intervenções Mecânicas Realizadas</h3>
-                <p>Consulte abaixo todos os serviços mecánicos preventivos e corretivos efetuados no veículo ao longo do tempo.</p>
+                <p>Consulte abaixo todos os serviços mecânicos preventivos e corretivos efetuados no veículo ao longo do tempo.</p>
                 
                 <table>
                     <thead>
@@ -39,14 +41,42 @@
                             <th>Quilometragem</th>
                             <th>Tipo de Serviço</th>
                             <th>Custo (R$)</th>
+                            <th>Estado</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td><time datetime="2026-01-10">10/01/2026</time></td><td>45.000 km</td><td>Troca de Óleo e Filtros</td><td>250,00</td></tr>
-                        <tr><td><time datetime="2026-03-15">15/03/2026</time></td><td>48.500 km</td><td>Pastilhas de Freio</td><td>320,00</td></tr>
-                        <tr><td><time datetime="2026-06-20">20/06/2026</time></td><td>52.100 km</td><td>Alinhamento e Balanceamento</td><td>120,00</td></tr>
+                        <tr>
+                            <td><time datetime="2026-01-10">10/01/2026</time></td>
+                            <td>45.000 km</td>
+                            <td>Troca de Óleo e Filtros</td>
+                            <td>250,00</td>
+                            <td><mark style="background-color: #c6f6d5; color: #22543d;">Concluído</mark></td>
+                        </tr>
+                        <tr>
+                            <td><time datetime="2026-03-15">15/03/2026</time></td>
+                            <td>48.500 km</td>
+                            <td>Pastilhas de Freio</td>
+                            <td>320,00</td>
+                            <td><mark style="background-color: #c6f6d5; color: #22543d;">Concluído</mark></td>
+                        </tr>
+                        <tr>
+                            <td><time datetime="2026-06-20">20/06/2026</time></td>
+                            <td>52.100 km</td>
+                            <td>Alinhamento e Balanceamento</td>
+                            <td>120,00</td>
+                            <td><mark style="background-color: #c6f6d5; color: #22543d;">Concluído</mark></td>
+                        </tr>
                     </tbody>
                 </table>
+            </article>
+
+            <article>
+                <h3>Próximas Intervenções Recomendadas</h3>
+                <p>Planeie antecipadamente as próximas revisões preventivas baseadas no manual do fabricante:</p>
+                <ul>
+                    <li><strong>Troca de Correia Dentada:</strong> Previsão aos 60.000 km</li>
+                    <li><strong>Substituição do Fluido de Freio:</strong> Previsão em Dezembro/2026</li>
+                </ul>
             </article>
         </section>
     </main>
