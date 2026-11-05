@@ -35,7 +35,7 @@ O projeto possui 8 páginas:
 - `Paginas/` — Páginas do sistema
 - `img/` — Imagens
 - `Codigo_CSS/` — Página de CSS
-- `script.js/` — Página de Java
+- `Codigo_JS/` — Página de Java
 
 ## 🛠️ Tecnologias Utilizadas
 
