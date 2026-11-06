@@ -1,7 +1,7 @@
 // Aguarda o carregamento completo do DOM (Conceito da Aula 11)[cite: 165]
 document.addEventListener('DOMContentLoaded', () => {
 
-    // --- 1. TEMA CLARO / ESCURO COM LOCALSTORAGE (Conceito da Aula 10 e 12) ---
+    // --- 1. TEMA CLARO / ESCURO ---
     const temaSalvo = localStorage.getItem('tema');
     if (temaSalvo === 'dark') {
         document.body.classList.add('dark-mode');
@@ -17,12 +17,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- 2. VALIDAÇÃO E CAPTURA DO FORMULÁRIO DE CADASTRO (Aulas 11 e 12) ---
+    // --- 2. VALIDAÇÃO E CAPTURA DO FORMULÁRIO DE CADASTRO  ---
     const formCadastro = document.querySelector('#form-manutencao');
 
     if (formCadastro) {
         formCadastro.addEventListener('submit', (event) => {
-            event.preventDefault(); // Impede o recarregamento da página[cite: 162]
+            event.preventDefault(); // Impede o recarregamento da página
 
             // Capturar e limpar valores dos inputs (.value e .trim())
             const servico = document.querySelector('#servico').value.trim();
@@ -31,13 +31,13 @@ document.addEventListener('DOMContentLoaded', () => {
             const custo = document.querySelector('#custo').value.trim();
             const categoria = document.querySelector('#categoria').value;
 
-            // Validação simples obrigatória[cite: 163]
+            // Validação simples obrigatória
             if (servico === '' || km === '' || data === '') {
                 alert('Por favor, preencha todos os campos obrigatórios.');
                 return;
             }
 
-            // Criar objeto da nova manutenção (Conceito de Objetos)[cite: 123]
+            // Criar objeto da nova manutenção 
             const novaManutencao = {
                 id: Date.now(),
                 servico,
@@ -47,21 +47,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 categoria
             };
 
-            // Recuperar dados existentes do localStorage ou criar array vazio (JSON.parse/stringify)[cite: 144]
+            // Recuperar dados existentes do localStorage ou criar array vazio (JSON.parse/stringify)
             let listaManutencoes = JSON.parse(localStorage.getItem('manutencoes')) || [];
             
-            // Adicionar ao array (Conceito de Array.push)[cite: 122]
+            // Adicionar ao array (Conceito de Array.push)
             listaManutencoes.push(novaManutencao);
 
-            // Salvar de volta no localStorage convertendo para string JSON[cite: 144]
+            // Salvar de volta no localStorage convertendo para string JSON
             localStorage.setItem('manutencoes', JSON.stringify(listaManutencoes));
 
             alert('Manutenção registada com sucesso no navegador!');
-            formCadastro.reset(); // Limpa o formulário[cite: 163]
+            formCadastro.reset(); // Limpa o formulário
         });
     }
 
-    // --- 3. RENDERIZAÇÃO DINÂMICA NA TABELA DE MANUTENÇÕES (Aula 11 e 12) ---
+    // --- 3. RENDERIZAÇÃO DINÂMICA NA TABELA DE MANUTENÇÕES  ---
     const tabelaTbody = document.querySelector('#tabela-manutencoes-corpo');
 
     if (tabelaTbody) {
