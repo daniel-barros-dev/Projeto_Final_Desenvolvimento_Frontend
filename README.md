@@ -4,7 +4,7 @@ O Auto Care é uma plataforma web desenvolvida com o objetivo de simplificar o a
 
 ## 🎯 Objetivo do Projeto
 
-Este projeto foi desenvolvido com o propósito de aplicar e consolidar os conhecimentos práticos de HTML, CSS e Java adquiridos durante a disciplina.
+Este projeto foi desenvolvido com o propósito de aplicar e consolidar os conhecimentos práticos de HTML e CSS adquiridos durante a disciplina.
 
 Por meio de uma aplicação funcional e orientada ao domínio real de gestão veicular, foram trabalhados conceitos de:
 
@@ -35,12 +35,9 @@ O projeto possui 8 páginas:
 - `Paginas/` — Páginas do sistema
 - `img/` — Imagens
 - `Codigo_CSS/` — Página de CSS
-- `Codigo_JS/` — Página de Java
 
 ## 🛠️ Tecnologias Utilizadas
 
 . HTML: Estruturação semântica das páginas web da plataforma.
 
 . CSS: Estilização visual, layout responsivo e padronização da identidade visual.
-
-. Java: Desenvolvimento da lógica de negócios backend, manipulação das entidades e integração com a camada de persistência.
