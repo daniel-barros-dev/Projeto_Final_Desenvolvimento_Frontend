@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Auto Care - Cadastro de Utilizador e Veículo</title>
+    <!-- Link para a folha de estilos externa -->
     <link rel="stylesheet" type="text/css" href="../Codigo_CSS/estilos.css">
 </head>
 <body>
 
 <div id="site">
-    
+    <!-- Cabeçalho da página -->
     <header>
         <h1>Auto Care</h1>
         <p>Registo de Novo Utilizador e Veículo</p>
     </header>
     
+    <!-- Menu de navegação -->
     <nav>
         <h3>Menu Auto Care</h3>
         <ul>
@@ -23,6 +25,7 @@
         </ul>
     </nav>
 
+    <!-- Conteúdo principal da página -->
     <main>
         <section>
             <h2>Criar Conta no Auto Care</h2>
@@ -30,8 +33,10 @@
                 <h3>Formulário de Registo Completo</h3>
                 <p>Preencha os campos abaixo com as suas informações pessoais e os detalhes do seu automóvel.</p>
                 
+                <!-- Formulário, redireciona para login.html-->
                 <form action="login.html" method="get">
                    
+                    <!-- Grupo 1: dados pessoais do usuário -->
                     <fieldset>
                         <legend>Dados Pessoais do Utilizador</legend>
                         
@@ -48,7 +53,7 @@
                         <input type="password" id="senha_cad" name="senha_cad" placeholder="Crie uma senha" required><br>
                     </fieldset>
 
-                  
+                  <!-- Grupo 2: dados pessoais do veiculo -->
                     <fieldset style="margin-top: 15px;">
                         <legend>Dados do Veículo</legend>
                         
@@ -71,18 +76,22 @@
                         <input type="date" id="data_manutencao" name="data_manutencao" required><br>
                     </fieldset>
 
+                    <!-- Botão de enviar o formulário -->
                     <p style="margin-top: 15px;">
                         <input type="submit" value="Concluir Cadastro">
                     </p>
                 </form>
 
+                <!-- Para tela de login -->
                 <p style="text-align: center; margin-top: 15px;">
                     Já possui uma conta? <a href="../Paginas/login.html" style="color: #2b6cb0; font-weight: bold;">Faça login aqui</a>.
                 </p>
             </article>
         </section>
     </main>
+    <!-- Limpa os floats do CSS para o rodapé posicionar corretamente -->
     <div class="clear"></div>
+    <!-- Rodapé da pagina -->
     <footer>
         <p>Auto Care &copy; 2026 - Todos os direitos reservados.</p>
     </footer>

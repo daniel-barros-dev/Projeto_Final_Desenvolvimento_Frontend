@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Auto Care - Meu Veículo</title>
+    <!-- Link para a folha de estilos externa -->
     <link rel="stylesheet" type="text/css" href="../Codigo_CSS/estilos.css">
 </head>
 <body>
 
 <div id="site">
+    <!-- Cabeçalho da página -->
     <header>
         <h1>Auto Care</h1>
         <p>Informações do Automóvel</p>
     </header>
     
+    <!-- Menu de navegação -->
     <nav>
         <h3>Menu Auto Care</h3>
         <ul>
@@ -26,6 +29,7 @@
         </ul>
     </nav>
 
+    <!-- Conteúdo principal da página -->
     <main>
         <section>
             <h2>Dados do Veículo Cadastrado</h2>
@@ -33,6 +37,7 @@
                 <h3>Especificações Técnicas</h3>
                 <p>Abaixo encontram-se detalhadas as características principais associadas ao registo atual na plataforma.</p>
                 
+                <!-- Tabela com as características do veículo (parâmetro / detalhe) -->
                 <table>
                     <tr><th>Parâmetro</th><th>Detalhe</th></tr>
                     <tr><td>Modelo</td><td>Honda Civic LX</td></tr>
@@ -42,13 +47,18 @@
                     <tr><td>Quilometragem Atual</td><td><mark>55.000 km</mark></td></tr>
                 </table>
             </article>
+
+            <!-- Bloco expansível: o conteúdo só aparece ao clicar no título -->
             <details>
                 <summary>Mais detalhes sobre o proprietário</summary>
+                <!-- <abbr> mostra o significado da sigla ao passar o mouse -->
                 <p>Veículo registado sob a <abbr title="Chave Estrangeira">FK</abbr> de utilizador principal ativo no sistema.</p>
             </details>
         </section>
     </main>
+    <!-- Limpa os floats do CSS para o rodapé posicionar corretamente -->
     <div class="clear"></div>
+    <!-- Rodapé da pagina -->
     <footer>
         <p>Auto Care &copy; 2026 - Todos os direitos reservados.</p>
     </footer>

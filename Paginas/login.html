@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Auto Care - Login</title>
+    <!-- Link para a folha de estilos externa -->
     <link rel="stylesheet" type="text/css" href="../Codigo_CSS/estilos.css">
 </head>
 <body>
 
 <div id="site">
+
+    <!-- Cabeçalho da página -->
     <header>
         <h1>Auto Care</h1>
         <p>Acesso ao Sistema</p>
     </header>
     
+    <!-- Menu de navegação -->
     <nav>
         <h3>Menu Auto Care</h3>
         <ul>
@@ -22,6 +26,7 @@
         </ul>
     </nav>
 
+    <!-- Conteúdo principal da página -->
     <main>
         <section>
             <h2>Entrar na Plataforma</h2>
@@ -29,6 +34,7 @@
                 <h3>Autenticação de Utilizador</h3>
                 <p>Introduza as suas credenciais para aceder ao painel de controlo do seu veículo.</p>
                 
+                <!-- Formulário: ao enviar, redireciona para index.html (método GET) -->
                 <form action="index.html" method="get">
                     <fieldset>
                         <legend>Painel de Acesso</legend>
@@ -43,13 +49,16 @@
                     </fieldset>
                 </form>
 
+                <!-- Link para quem ainda não tem conta -->
                 <p style="text-align: center; margin-top: 15px;">
                     Ainda não tem uma conta? <a href="../Paginas/cadastrar.html" style="color: #2b6cb0; font-weight: bold;">Cadastre-se aqui</a>.
                 </p>
             </article>
         </section>
     </main>
+    <!-- Limpa os floats do CSS para o rodapé posicionar corretamente -->
     <div class="clear"></div>
+    <!-- Rodapé da pagina -->
     <footer>
         <p>Auto Care &copy; 2026 - Todos os direitos reservados.</p>
     </footer>

@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Auto Care - Despesas</title>
+    <!-- Link para a folha de estilos externa -->
     <link rel="stylesheet" type="text/css" href="../Codigo_CSS/estilos.css">
 </head>
 <body>
 
 <div id="site">
-    
+    <!-- Cabeçalho da página -->
     <header>
         <h1>Auto Care</h1>
         <p>Controlo Financeiro</p>
     </header>
     
+    <!-- Menu de navegação -->
     <nav>
         <h3>Menu Auto Care</h3>
         <ul>
@@ -27,10 +29,12 @@
         </ul>
     </nav>
 
+    <!-- Conteúdo principal da página -->
     <main>
         <section>
             <h2>Gastos com Combustível, Peças e Serviços</h2>
 
+            <!-- Cartões de resumo com os totais do mês -->
             <div class="resumo-container">
                 <div class="card-resumo">
                     <h4>Total Gasto (Mês)</h4>
@@ -50,7 +54,9 @@
                 <h3>Registo Consolidado de Despesas</h3>
                 <p>Acompanhe detalhadamente para onde vão os custos operacionais do seu automóvel mensalmente.</p>
                 
+                <!-- Tabela com o histórico detalhado de despesas -->
                 <table>
+                    <!-- Cabeçalho da tabela (nomes das colunas) -->
                     <thead>
                         <tr>
                             <th>Data</th>
@@ -59,6 +65,8 @@
                             <th>Valor (R$)</th>
                         </tr>
                     </thead>
+
+                    <!-- Corpo da tabela (cada <tr> é uma despesa) -->
                     <tbody>
                         <tr>
                             <td>02/10/2026</td>
@@ -83,7 +91,10 @@
             </article>
         </section>
     </main>
+
+    <!-- Limpa os floats do CSS para o rodapé posicionar corretamente -->
     <div class="clear"></div>
+    <!-- Rodapé da pagina -->
     <footer>
         <p>Auto Care &copy; 2026 - Todos os direitos reservados.</p>
     </footer>
