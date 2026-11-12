@@ -3,11 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- NOVO: necessário para a página funcionar bem no celular (Aula 07) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Auto Care - Início</title>
     <!-- Link para a folha de estilos externa -->
     <link rel="stylesheet" type="text/css" href="../Codigo_CSS/estilos.css">
+    <link rel="stylesheet" type="text/css" href="../Codigo_CSS/index.css">
 </head>
 
 <body>
@@ -24,7 +24,6 @@
         <nav>
             <h3>Menu Auto Care</h3>
             <ul>
-                <!-- NOVO: class="ativo" marca a página atual. Troque de lugar em cada página -->
                 <li><a href="../Paginas/index.html" class="ativo">Início</a></li>
                 <li><a href="../Paginas/veiculo.html">Meu veículo</a></li>
                 <li><a href="../Paginas/manutencoes.html">Manutenções</a></li>
@@ -52,8 +51,8 @@
                     <div class="resumo-container">
                         <div class="card-resumo">
                             <h4>Meu veículo</h4>
-                            <p>[Marca Modelo] [Ano]</p>
-                            <small class="detalhe">Placa [ABC-1D23] - [00.000] km</small>
+                            <p>[Honda Civic LX] [24/25]</p>
+                            <small class="detalhe">Placa [QFA-1234] - [55.000] km</small>
                         </div>
 
                         <div class="card-resumo">
@@ -61,8 +60,7 @@
                             <p>82%</p>
                             <div class="barra" role="progressbar" aria-valuenow="82" aria-valuemin="0"
                                 aria-valuemax="100" aria-label="Plano de manutenção cumprido">
-                                <!-- AINDA NÃO IMPLEMENTADO: a largura (82%) deveria ser calculada
-                                     pelo sistema com JavaScript. Por enquanto é um valor fixo -->
+                                <!-- A largura (82%) por enquanto é um valor fixo -->
                                 <div class="barra-preenchimento" style="width: 82%;"></div>
                             </div>
                             <small class="detalhe">do plano de manutenção cumprido</small>
@@ -70,8 +68,8 @@
 
                         <div class="card-resumo">
                             <h4>Próxima revisão</h4>
-                            <p>[00] dias</p>
-                            <small class="detalhe">ou [0.000] km restantes</small>
+                            <p>[90] dias</p>
+                            <small class="detalhe">ou [5.000] km restantes</small>
                             <a href="../Paginas/manutencoes.html" class="btn-secundario">Agendar revisão</a>
                         </div>
                     </div>
@@ -87,11 +85,11 @@
                     
                     <ul class="lista-alertas">
                         <li>
-                            <span><strong>Licenciamento</strong><br><small>Vence em [00/00/0000]</small></span>
-                            <span class="status status-urgente">Vence em [0] dias</span>
+                            <span><strong>Licenciamento</strong><br><small>Vence em [30/11/2026]</small></span>
+                            <span class="status status-urgente">Vence em [18] dias</span>
                         </li>
                         <li>
-                            <span><strong>Troca de óleo e filtro</strong><br><small>Última troca há [0.000] km</small></span>
+                            <span><strong>Troca de óleo e filtro</strong><br><small>Última troca há [55.000] km</small></span>
                             <span class="status status-atencao">Em breve</span>
                         </li>
                         <li>
@@ -99,40 +97,9 @@
                             <span class="status status-ok">Em dia</span>
                         </li>
                     </ul>
-                    <p><small>Atualizado em: <time datetime="2026-11-10">10 de Novembro de 2026</time></small></p>
+                    <p><small>Atualizado em: <time datetime="2026-11-12">12 de Novembro de 2026</time></small></p>
                 </aside>
 
-                <!-- gráfico de despesas feito só com div + Flexbox -->
-                <article>
-                    <h3>Despesas dos últimos 6 meses</h3>
-                    <div class="grafico">
-                        <div class="coluna">
-                            <div class="area-barra"><div class="barra-gasto" style="height: 60%;"></div></div>
-                            <small>Jun</small>
-                        </div>
-                        <div class="coluna">
-                            <div class="area-barra"><div class="barra-gasto" style="height: 38%;"></div></div>
-                            <small>Jul</small>
-                        </div>
-                        <div class="coluna">
-                            <div class="area-barra"><div class="barra-gasto" style="height: 74%;"></div></div>
-                            <small>Ago</small>
-                        </div>
-                        <div class="coluna">
-                            <div class="area-barra"><div class="barra-gasto" style="height: 30%;"></div></div>
-                            <small>Set</small>
-                        </div>
-                        <div class="coluna">
-                            <div class="area-barra"><div class="barra-gasto" style="height: 52%;"></div></div>
-                            <small>Out</small>
-                        </div>
-                        <div class="coluna atual">
-                            <div class="area-barra"><div class="barra-gasto" style="height: 100%;"></div></div>
-                            <small>Nov</small>
-                        </div>
-                    </div>
-                    <p>Total no mês: <strong>R$ [0.000,00]</strong></p>
-                </article>
             </section>
         </main>
 

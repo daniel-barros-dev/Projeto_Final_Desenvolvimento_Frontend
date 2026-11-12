@@ -1,0 +1,31 @@
+.grafico {
+    display: flex;
+    gap: 14px;
+    height: 180px;
+    margin: 15px 0px;
+}
+
+.coluna {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.area-barra {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.barra-gasto {
+    width: 100%;
+    background-color: #b9d3f5;
+    border-radius: 6px 6px 0px 0px;
+}
+
+.coluna.atual .barra-gasto {
+    background-color: #2b6cb0;
+}
