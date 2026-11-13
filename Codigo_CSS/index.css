@@ -94,3 +94,22 @@
 .lista-alertas small {
     color: #4a5568;
 }
+
+header {
+    position: relative;
+    min-height: 80px;
+}
+
+.logo-link {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    display: block;
+    line-height: 0;
+}
+
+.logo {
+    height: 90px;
+    width: auto;
+    display: block;
+}

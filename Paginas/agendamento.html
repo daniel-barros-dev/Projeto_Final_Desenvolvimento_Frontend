@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Care - Agendamentos</title>
+    <!-- Link para a folha de estilos externa -->
+    <link rel="stylesheet" type="text/css" href="../Codigo_CSS/estilos.css">
+</head>
+
+<body>
+
+    <div id="site">
+
+        <!-- Cabeçalho da página -->
+        <header>
+            <h1>Auto Care</h1>
+            <p>Sistema Inteligente de Gestão Automotiva</p>
+        </header>
+
+        <!-- Menu de navegação -->
+        <nav>
+            <h3>Menu Auto Care</h3>
+            <ul>
+                <li><a href="../Paginas/index.html">Início</a></li>
+                <li><a href="../Paginas/veiculo.html">Meu veículo</a></li>
+                <li><a href="../Paginas/manutencoes.html">Manutenções</a></li>
+                <li><a href="../Paginas/agendamentos.html" class="ativo">Agendamentos</a></li>
+                <li><a href="../Paginas/registromanutencao.html">Registrar Manutenção</a></li>
+                <li><a href="../Paginas/despesas.html">Despesas</a></li>
+                <li><a href="../Paginas/documentos.html">Documentos</a></li>
+                <li><a href="../Paginas/login.html">Login</a></li>
+            </ul>
+        </nav>
+
+        <!-- Conteúdo principal da página -->
+        <main>
+            <section>
+                <h2>Agendamentos</h2>
+
+                <article>
+                    <h3>Novo Agendamento</h3>
+                    <p>Preencha os dados abaixo para agendar uma revisão ou um serviço para o seu veículo.</p>
+
+                    <!-- AINDA NÃO IMPLEMENTADO: salvar os dados. O action="#" só recarrega a página.
+                         Para gravar de verdade será preciso JavaScript e back-end -->
+                    <form action="#" method="post">
+
+                        <fieldset>
+                            <legend>Dados do serviço</legend>
+
+                            <label for="servico">Tipo de serviço</label><br>
+                            <select id="servico" name="servico" required>
+                                <option value="">Selecione...</option>
+                                <option value="oleo">Troca de óleo e filtro</option>
+                                <option value="revisao">Revisão periódica</option>
+                                <option value="alinhamento">Alinhamento e balanceamento</option>
+                                <option value="freios">Freios</option>
+                                <option value="pneus">Pneus</option>
+                                <option value="outro">Outro</option>
+                            </select><br>
+
+                            <label for="oficina">Oficina / local</label><br>
+                            <input type="text" id="oficina" name="oficina" placeholder="Nome da oficina" required>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Data e horário</legend>
+
+                            <label for="data">Data</label><br>
+                            <input type="date" id="data" name="data" required><br>
+
+                            <!-- O CSS não tem estilo para input type="time", por isso o horário é um select -->
+                            <label for="hora">Horário</label><br>
+                            <select id="hora" name="hora" required>
+                                <option value="">Selecione...</option>
+                                <option value="08:00">08:00</option>
+                                <option value="09:00">09:00</option>
+                                <option value="10:00">10:00</option>
+                                <option value="11:00">11:00</option>
+                                <option value="13:00">13:00</option>
+                                <option value="14:00">14:00</option>
+                                <option value="15:00">15:00</option>
+                                <option value="16:00">16:00</option>
+                            </select><br>
+
+                            <label for="km">Quilometragem atual</label><br>
+                            <input type="number" id="km" name="km" min="0" placeholder="Ex.: 45000">
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Observações</legend>
+
+                            <label for="obs">Observações (opcional)</label><br>
+                            <textarea id="obs" name="obs" rows="4" placeholder="Ex.: levar o manual do veículo"></textarea>
+                        </fieldset>
+
+                        <input type="submit" value="Salvar agendamento">
+                    </form>
+                </article>
+            </section>
+        </main>
+
+        <!-- Limpa os floats do CSS para o rodapé posicionar corretamente -->
+        <div class="clear"></div>
+
+        <!-- Rodapé da página -->
+        <!-- Sem <p> aqui de propósito: o estilo global do p deixaria o texto escuro no fundo azul -->
+        <footer>
+            Auto Care &copy; 2026 - Todos os direitos reservados.
+        </footer>
+    </div>
+
+</body>
+
+</html>
