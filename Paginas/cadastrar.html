@@ -1,102 +1,112 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>Auto Care - Cadastro de Utilizador e Veículo</title>
     <!-- Link para a folha de estilos externa -->
     <link rel="stylesheet" type="text/css" href="../Codigo_CSS/estilos.css">
 </head>
+
 <body>
 
-<div id="site">
-    <!-- Cabeçalho da página -->
-    <header>
-        <h1>Auto Care</h1>
-        <p>Registo de Novo Utilizador e Veículo</p>
-    </header>
-    
-    <!-- Menu de navegação -->
-    <nav>
-        <h3>Menu Auto Care</h3>
-        <ul>
-            <li><a href="../Paginas/login.html">Login</a></li>
-            <li><a href="../Paginas/cadastrar.html" class="ativo">Registar Utilizador</a></li>
-            <li><a href="../Paginas/index.html">Início (Painel)</a></li>
-        </ul>
-    </nav>
+    <div id="site">
 
-    <!-- Conteúdo principal da página -->
-    <main>
-        <section>
-            <h2>Criar Conta no Auto Care</h2>
-            <article>
-                <h3>Formulário de Registo Completo</h3>
-                <p>Preencha os campos abaixo com as suas informações pessoais e os detalhes do seu automóvel.</p>
-                
-                <!-- Formulário que redireciona para login.html-->
-                <form action="login.html" method="get">
-                   
-                    <!-- Dados pessoais do usuário -->
-                    <fieldset>
-                        <legend>Dados Pessoais do Utilizador</legend>
-                        
-                        <label for="nome">Nome Completo:</label><br>
-                        <input type="text" id="nome" name="nome" placeholder="Seu nome" required><br>
+        <!-- Cabeçalho da página -->
+        <header>
+            <a href="../Paginas/index.html" class="logo-link">
+                <img src="../img/logo-emblema.png" alt="Logo Auto Care" class="logo">
+            </a>
+            <h1>Auto Care</h1>
+        </header>
 
-                        <label for="idade">Idade:</label><br>
-                        <input type="number" id="idade" name="idade" placeholder="Ex: 30" required><br>
+        <!-- Menu de navegação -->
+        <nav>
+            <h3>Menu Auto Care</h3>
+            <ul>
+                <li><a href="../Paginas/login.html">Login</a></li>
+                <li><a href="../Paginas/cadastrar.html" class="ativo">Registar Utilizador</a></li>
+                <li><a href="../Paginas/index.html">Início (Painel)</a></li>
+            </ul>
+        </nav>
 
-                        <label for="email_cad">E-mail:</label><br>
-                        <input type="text" id="email_cad" name="email_cad" placeholder="seuemail@dominio.com" required><br>
+        <!-- Conteúdo principal da página -->
+        <main>
+            <section>
+                <h2>Criar Conta no Auto Care</h2>
+                <article>
+                    <h3>Formulário de Registo Completo</h3>
+                    <p>Preencha os campos abaixo com as suas informações pessoais e os detalhes do seu automóvel.</p>
 
-                        <label for="senha_cad">Senha:</label><br>
-                        <input type="password" id="senha_cad" name="senha_cad" placeholder="Crie uma senha" required><br>
-                    </fieldset>
+                    <!-- Formulário que redireciona para login.html-->
+                    <form action="login.html" method="get">
 
-                  <!-- Dados pessoais do veiculo -->
-                    <fieldset style="margin-top: 15px;">
-                        <legend>Dados do Veículo</legend>
-                        
-                        <label for="modelo">Modelo:</label><br>
-                        <input type="text" id="modelo" name="modelo" placeholder="Ex: Civic" required><br>
+                        <!-- Dados pessoais do usuário -->
+                        <fieldset>
+                            <legend>Dados Pessoais do Utilizador</legend>
 
-                        <label for="marca">Marca:</label><br>
-                        <input type="text" id="marca" name="marca" placeholder="Ex: Honda" required><br>
+                            <label for="nome">Nome Completo:</label><br>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome" required><br>
 
-                        <label for="placa">Placa:</label><br>
-                        <input type="text" id="placa" name="placa" placeholder="Ex: QFA-1234" required><br>
+                            <label for="idade">Idade:</label><br>
+                            <input type="number" id="idade" name="idade" placeholder="Ex: 30" required><br>
 
-                        <label for="ano">Ano:</label><br>
-                        <input type="text" id="ano" name="ano" placeholder="Ex: 2024/2025" required><br>
+                            <label for="email_cad">E-mail:</label><br>
+                            <input type="text" id="email_cad" name="email_cad" placeholder="seuemail@dominio.com"
+                                required><br>
 
-                        <label for="quilometragem">Quilometragem (km):</label><br>
-                        <input type="number" id="quilometragem" name="quilometragem" placeholder="Ex: 55000" required><br>
+                            <label for="senha_cad">Senha:</label><br>
+                            <input type="password" id="senha_cad" name="senha_cad" placeholder="Crie uma senha"
+                                required><br>
+                        </fieldset>
 
-                        <label for="data_manutencao">Data da Última Manutenção:</label><br>
-                        <input type="date" id="data_manutencao" name="data_manutencao" required><br>
-                    </fieldset>
+                        <!-- Dados pessoais do veiculo -->
+                        <fieldset style="margin-top: 15px;">
+                            <legend>Dados do Veículo</legend>
 
-                    <!-- Botão de enviar o formulário -->
-                    <p style="margin-top: 15px;">
-                        <input type="submit" value="Concluir Cadastro">
+                            <label for="modelo">Modelo:</label><br>
+                            <input type="text" id="modelo" name="modelo" placeholder="Ex: Civic" required><br>
+
+                            <label for="marca">Marca:</label><br>
+                            <input type="text" id="marca" name="marca" placeholder="Ex: Honda" required><br>
+
+                            <label for="placa">Placa:</label><br>
+                            <input type="text" id="placa" name="placa" placeholder="Ex: QFA-1234" required><br>
+
+                            <label for="ano">Ano:</label><br>
+                            <input type="text" id="ano" name="ano" placeholder="Ex: 2024/2025" required><br>
+
+                            <label for="quilometragem">Quilometragem (km):</label><br>
+                            <input type="number" id="quilometragem" name="quilometragem" placeholder="Ex: 55000"
+                                required><br>
+
+                            <label for="data_manutencao">Data da Última Manutenção:</label><br>
+                            <input type="date" id="data_manutencao" name="data_manutencao" required><br>
+                        </fieldset>
+
+                        <!-- Botão de enviar o formulário -->
+                        <p style="margin-top: 15px;">
+                            <input type="submit" value="Concluir Cadastro">
+                        </p>
+                    </form>
+
+                    <!-- Link para fazer o login, caso já tenha conta -->
+                    <p style="text-align: center; margin-top: 15px;">
+                        Já possui uma conta? <a href="../Paginas/login.html"
+                            style="color: #2b6cb0; font-weight: bold;">Faça login aqui</a>.
                     </p>
-                </form>
-
-                <!-- Link para fazer o login, caso já tenha conta -->
-                <p style="text-align: center; margin-top: 15px;">
-                    Já possui uma conta? <a href="../Paginas/login.html" style="color: #2b6cb0; font-weight: bold;">Faça login aqui</a>.
-                </p>
-            </article>
-        </section>
-    </main>
-    <!-- Limpa os floats do CSS para o rodapé posicionar corretamente -->
-    <div class="clear"></div>
-    <!-- Rodapé da pagina -->
-    <footer>
-        <p>Auto Care &copy; 2026 - Todos os direitos reservados.</p>
-    </footer>
-</div>
+                </article>
+            </section>
+        </main>
+        <!-- Limpa os floats do CSS para o rodapé posicionar corretamente -->
+        <div class="clear"></div>
+        <!-- Rodapé da pagina -->
+        <footer>
+            <p>Auto Care &copy; 2026 - Todos os direitos reservados.</p>
+        </footer>
+    </div>
 
 
 </body>
+
 </html>

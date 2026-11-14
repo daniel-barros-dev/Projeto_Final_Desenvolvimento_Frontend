@@ -1,69 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>Auto Care - Login</title>
     <!-- Link para a folha de estilos externa -->
     <link rel="stylesheet" type="text/css" href="../Codigo_CSS/estilos.css">
 </head>
+
 <body>
 
-<div id="site">
+    <div id="site">
 
-    <!-- Cabeçalho da página -->
-    <header>
-        <h1>Auto Care</h1>
-        <p>Acesso ao Sistema</p>
-    </header>
-    
-    <!-- Menu de navegação -->
-    <nav>
-        <h3>Menu Auto Care</h3>
-        <ul>
-            <li><a href="../Paginas/login.html" class="ativo">Login</a></li>
-            <li><a href="../Paginas/cadastrar.html">Registar Utilizador</a></li>
-            <li><a href="../Paginas/index.html">Início (Painel)</a></li>
-        </ul>
-    </nav>
+        <!-- Cabeçalho da página -->
+        <header>
+            <a href="../Paginas/index.html" class="logo-link">
+                <img src="../img/logo-emblema.png" alt="Logo Auto Care" class="logo">
+            </a>
+            <h1>Auto Care</h1>
+        </header>
 
-    <!-- Conteúdo principal da página -->
-    <main>
-        <section>
-            <h2>Entrar na Plataforma</h2>
-            <article>
-                <h3>Autenticação de Utilizador</h3>
-                <p>Introduza as suas credenciais para aceder ao painel de controlo do seu veículo.</p>
-                
-                <!-- Formulário que ao enviar, redireciona para index.html -->
-                <form action="index.html" method="get">
-                    <fieldset>
-                        <legend>Painel de Acesso</legend>
-                        
-                        <label for="email">E-mail:</label><br>
-                        <input type="text" id="email" name="email" placeholder="exemplo@email.com" required><br>
 
-                        <label for="senha">Senha:</label><br>
-                        <input type="password" id="senha" name="senha" placeholder="********" required><br>
+        <!-- Menu de navegação -->
+        <nav>
+            <h3>Menu Auto Care</h3>
+            <ul>
+                <li><a href="../Paginas/login.html" class="ativo">Login</a></li>
+                <li><a href="../Paginas/cadastrar.html">Registar Utilizador</a></li>
+                <li><a href="../Paginas/index.html">Início (Painel)</a></li>
+            </ul>
+        </nav>
 
-                        <input type="submit" value="Entrar">
-                    </fieldset>
-                </form>
+        <!-- Conteúdo principal da página -->
+        <main>
+            <section>
+                <h2>Entrar na Plataforma</h2>
+                <article>
+                    <h3>Autenticação de Utilizador</h3>
+                    <p>Introduza as suas credenciais para aceder ao painel de controlo do seu veículo.</p>
 
-                <!-- Link para quem ainda não tem conta se cadastrar -->
-                <p style="text-align: center; margin-top: 15px;">
-                    Ainda não tem uma conta? <a href="../Paginas/cadastrar.html" style="color: #2b6cb0; font-weight: bold;">Cadastre-se aqui</a>.
-                </p>
-            </article>
-        </section>
-    </main>
-    <!-- Limpa os floats do CSS para o rodapé posicionar corretamente -->
-    <div class="clear"></div>
-    <!-- Rodapé da pagina -->
-    <footer>
-        <p>Auto Care &copy; 2026 - Todos os direitos reservados.</p>
-    </footer>
-    
-</div>
+                    <!-- Formulário que ao enviar, redireciona para index.html -->
+                    <form action="index.html" method="get">
+                        <fieldset>
+                            <legend>Painel de Acesso</legend>
+
+                            <label for="email">E-mail:</label><br>
+                            <input type="text" id="email" name="email" placeholder="exemplo@email.com" required><br>
+
+                            <label for="senha">Senha:</label><br>
+                            <input type="password" id="senha" name="senha" placeholder="********" required><br>
+
+                            <input type="submit" value="Entrar">
+                        </fieldset>
+                    </form>
+
+                    <!-- Link para quem ainda não tem conta se cadastrar -->
+                    <p style="text-align: center; margin-top: 15px;">
+                        Ainda não tem uma conta? <a href="../Paginas/cadastrar.html"
+                            style="color: #2b6cb0; font-weight: bold;">Cadastre-se aqui</a>.
+                    </p>
+                </article>
+            </section>
+        </main>
+        <!-- Limpa os floats do CSS para o rodapé posicionar corretamente -->
+        <div class="clear"></div>
+        <!-- Rodapé da pagina -->
+        <footer>
+            <p>Auto Care &copy; 2026 - Todos os direitos reservados.</p>
+        </footer>
+
+    </div>
 
 
 </body>

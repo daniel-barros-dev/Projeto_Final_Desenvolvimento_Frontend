@@ -1,92 +1,101 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>Auto Care - Documentos</title>
     <!-- Link para a folha de estilos externa -->
     <link rel="stylesheet" type="text/css" href="../Codigo_CSS/estilos.css">
 </head>
+
 <body>
 
-<div id="site">
-    <!-- Cabeçalho da página -->
-    <header>
-        <h1>Auto Care</h1>
-        <p>Gestão de Documentação</p>
-    </header>
-    
-    <!-- Menu de navegação -->
-    <nav>
-        <h3>Menu Auto Care</h3>
-        <ul>
-            <li><a href="../Paginas/index.html">Início</a></li>
-            <li><a href="../Paginas/veiculo.html">Meu veículo</a></li>
-            <li><a href="../Paginas/manutencoes.html">Manutenções</a></li>
-            <li><a href="../Paginas/registromanutencao.html">Registrar Manutenção</a></li>
-            <li><a href="../Paginas/agendamento.html">Agendar Revisão</a></li>
-            <li><a href="../Paginas/despesas.html">Despesas</a></li>
-            <li><a href="../Paginas/documentos.html" class="ativo">Documentos</a></li>
-            <li><a href="../Paginas/login.html">Login</a></li>
-        </ul>
-    </nav>
+    <div id="site">
 
-    <!-- Conteúdo principal da página -->
-    <main>
-        <section>
-            <h2>IPVA, Licenciamento e Vencimentos</h2>
-            <article>
-                <h3>Estado dos Documentos do Veículo</h3>
-                <p>Verifique abaixo as datas de vencimento das obrigações legais associadas ao seu automóvel de forma consolidada.</p>
-                
-                <!-- Tabela com os documentos e suas datas de vencimento -->
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Tipo de Documento</th>
-                            <th>Data de Vencimento</th>
-                            <th>Observação</th>
-                            <th>Status</th>
-                        </tr>
-                    </thead>
+        <!-- Cabeçalho da página -->
+        <header>
+            <a href="../Paginas/index.html" class="logo-link">
+                <img src="../img/logo-emblema.png" alt="Logo Auto Care" class="logo">
+            </a>
+            <h1>Auto Care</h1>
+        </header>
 
-                    <!-- Corpo da tabela -->
-                    <tbody>
-                        <tr>
-                            <td>IPVA 2026</td>
-                            <td><time datetime="2026-03-31">31/03/2026</time></td>
-                            <td>Cota única paga</td>
-                            <td><mark style="background-color: #c6f6d5; color: #22543d;">Regular</mark></td>
-                        </tr>
-                        <tr>
-                            <td>Licenciamento Anual</td>
-                            <td><time datetime="2026-07-30">30/11/2026</time></td>
-                            <td>Emitido CRLV-e</td>
-                            <td><mark style="background-color: #c6f6d5; color: #22543d;">Regular</mark></td>
-                        </tr>
-                        <tr>
-                            <td>Seguro Obrigatório</td>
-                            <td><time datetime="2026-03-31">31/03/2026</time></td>
-                            <td>Incluído no sistema</td>
-                            <td><mark style="background-color: #c6f6d5; color: #22543d;">Regular</mark></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </article>
 
-            <!-- Caixa lateral com um aviso complementar -->
-            <aside>
-                <h4>Segurança Jurídica</h4>
-                <p>Mantenha sempre o CRLV atualizado no formato digital para evitar coimas em eventuais fiscalizações de trânsito.</p>
-            </aside>
-        </section>
-    </main>
-    <!-- Limpa os floats do CSS para o rodapé posicionar corretamente -->
-    <div class="clear"></div>
-    <!-- Rodapé da pagina -->
-    <footer>
-        <p>Auto Care &copy; 2026 - Todos os direitos reservados.</p>
-    </footer>
-</div>
+        <!-- Menu de navegação -->
+        <nav>
+            <h3>Menu Auto Care</h3>
+            <ul>
+                <li><a href="../Paginas/index.html">Início</a></li>
+                <li><a href="../Paginas/veiculo.html">Meu veículo</a></li>
+                <li><a href="../Paginas/manutencoes.html">Manutenções</a></li>
+                <li><a href="../Paginas/registromanutencao.html">Registrar Manutenção</a></li>
+                <li><a href="../Paginas/agendamento.html">Agendar Revisão</a></li>
+                <li><a href="../Paginas/despesas.html">Despesas</a></li>
+                <li><a href="../Paginas/documentos.html" class="ativo">Documentos</a></li>
+                <li><a href="../Paginas/login.html">Login</a></li>
+            </ul>
+        </nav>
+
+        <!-- Conteúdo principal da página -->
+        <main>
+            <section>
+                <h2>IPVA, Licenciamento e Vencimentos</h2>
+                <article>
+                    <h3>Estado dos Documentos do Veículo</h3>
+                    <p>Verifique abaixo as datas de vencimento das obrigações legais associadas ao seu automóvel de
+                        forma consolidada.</p>
+
+                    <!-- Tabela com os documentos e suas datas de vencimento -->
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tipo de Documento</th>
+                                <th>Data de Vencimento</th>
+                                <th>Observação</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+
+                        <!-- Corpo da tabela -->
+                        <tbody>
+                            <tr>
+                                <td>IPVA 2026</td>
+                                <td><time datetime="2026-03-31">31/03/2026</time></td>
+                                <td>Cota única paga</td>
+                                <td><mark style="background-color: #c6f6d5; color: #22543d;">Regular</mark></td>
+                            </tr>
+                            <tr>
+                                <td>Licenciamento Anual</td>
+                                <td><time datetime="2026-07-30">30/11/2026</time></td>
+                                <td>Emitido CRLV-e</td>
+                                <td><mark style="background-color: #c6f6d5; color: #22543d;">Regular</mark></td>
+                            </tr>
+                            <tr>
+                                <td>Seguro Obrigatório</td>
+                                <td><time datetime="2026-03-31">31/03/2026</time></td>
+                                <td>Incluído no sistema</td>
+                                <td><mark style="background-color: #c6f6d5; color: #22543d;">Regular</mark></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+
+                <!-- Caixa lateral com um aviso complementar -->
+                <aside>
+                    <h4>Segurança Jurídica</h4>
+                    <p>Mantenha sempre o CRLV atualizado no formato digital para evitar coimas em eventuais
+                        fiscalizações de trânsito.</p>
+                </aside>
+            </section>
+        </main>
+        <!-- Limpa os floats do CSS para o rodapé posicionar corretamente -->
+        <div class="clear"></div>
+        <!-- Rodapé da pagina -->
+        <footer>
+            <p>Auto Care &copy; 2026 - Todos os direitos reservados.</p>
+        </footer>
+    </div>
 
 </body>
+
 </html>

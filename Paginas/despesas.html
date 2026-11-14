@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>Auto Care - Despesas</title>
@@ -8,134 +9,151 @@
     <link rel="stylesheet" type="text/css" href="../Codigo_CSS/despesas.css">
 
 </head>
+
 <body>
 
-<div id="site">
-    <!-- Cabeçalho da página -->
-    <header>
-        <h1>Auto Care</h1>
-        <p>Controlo Financeiro</p>
-    </header>
-    
-    <!-- Menu de navegação -->
-    <nav>
-        <h3>Menu Auto Care</h3>
-        <ul>
-            <li><a href="../Paginas/index.html">Início</a></li>
-            <li><a href="../Paginas/veiculo.html">Meu veículo</a></li>
-            <li><a href="../Paginas/manutencoes.html">Manutenções</a></li>
-            <li><a href="../Paginas/registromanutencao.html">Registrar Manutenção</a></li>
-            <li><a href="../Paginas/agendamento.html">Agendar Revisão</a></li>
-            <li><a href="../Paginas/despesas.html" class="ativo">Despesas</a></li>
-            <li><a href="../Paginas/documentos.html">Documentos</a></li>
-            <li><a href="../Paginas/login.html">Login</a></li>
-        </ul>
-    </nav>
+    <div id="site">
 
-    <!-- Conteúdo principal da página -->
-    <main>
-        <section>
-            <h2>Gastos com Combustível, Peças e Serviços</h2>
+        <!-- Cabeçalho da página -->
+        <header>
+            <a href="../Paginas/index.html" class="logo-link">
+                <img src="../img/logo-emblema.png" alt="Logo Auto Care" class="logo">
+            </a>
+            <h1>Auto Care</h1>
+        </header>
 
-            <!-- Cartões de resumo com os totais do mês -->
-            <div class="resumo-container">
-                <div class="card-resumo">
-                    <h4>Total Gasto (Mês)</h4>
-                    <p>R$ 550,16</p>
+        <!-- Menu de navegação -->
+        <nav>
+            <h3>Menu Auto Care</h3>
+            <ul>
+                <li><a href="../Paginas/index.html">Início</a></li>
+                <li><a href="../Paginas/veiculo.html">Meu veículo</a></li>
+                <li><a href="../Paginas/manutencoes.html">Manutenções</a></li>
+                <li><a href="../Paginas/registromanutencao.html">Registrar Manutenção</a></li>
+                <li><a href="../Paginas/agendamento.html">Agendar Revisão</a></li>
+                <li><a href="../Paginas/despesas.html" class="ativo">Despesas</a></li>
+                <li><a href="../Paginas/documentos.html">Documentos</a></li>
+                <li><a href="../Paginas/login.html">Login</a></li>
+            </ul>
+        </nav>
+
+        <!-- Conteúdo principal da página -->
+        <main>
+            <section>
+                <h2>Gastos com Combustível, Peças e Serviços</h2>
+
+                <!-- Cartões de resumo com os totais do mês -->
+                <div class="resumo-container">
+                    <div class="card-resumo">
+                        <h4>Total Gasto (Mês)</h4>
+                        <p>R$ 550,16</p>
+                    </div>
+                    <div class="card-resumo">
+                        <h4>Combustível</h4>
+                        <p>R$ 420,00</p>
+                    </div>
+                    <div class="card-resumo">
+                        <h4>Outras Despesas</h4>
+                        <p>R$ 130,16</p>
+                    </div>
                 </div>
-                <div class="card-resumo">
-                    <h4>Combustível</h4>
-                    <p>R$ 420,00</p>
-                </div>
-                <div class="card-resumo">
-                    <h4>Outras Despesas</h4>
-                    <p>R$ 130,16</p>
-                </div>
-            </div>
 
-            <article>
-                <h3>Registo Consolidado de Despesas</h3>
-                <p>Acompanhe detalhadamente para onde vão os custos operacionais do seu automóvel mensalmente.</p>
-                
-                <!-- Tabela com o histórico detalhado de despesas -->
-                <table>
-                    <!-- Cabeçalho da tabela (nomes das colunas) -->
-                    <thead>
-                        <tr>
-                            <th>Data</th>
-                            <th>Categoria</th>
-                            <th>Descrição</th>
-                            <th>Valor (R$)</th>
-                        </tr>
-                    </thead>
+                <article>
+                    <h3>Registo Consolidado de Despesas</h3>
+                    <p>Acompanhe detalhadamente para onde vão os custos operacionais do seu automóvel mensalmente.</p>
 
-                    <!-- Corpo da tabela (cada <tr> é uma despesa) -->
-                    <tbody>
-                        <tr>
-                            <td>02/10/2026</td>
-                            <td>Combustível</td>
-                            <td>Abastecimento Gasolina Aditivada <br><small>Posto Shell Centro</small></td>
-                            <td>220,00</td>
-                        </tr>
-                        <tr>
-                            <td>10/10/2026</td>
-                            <td>Imposto</td>
-                            <td>Pagamento de Multa de Trânsito <br><small>Órgão Municipal</small></td>
-                            <td>130,16</td>
-                        </tr>
-                        <tr>
-                            <td>18/10/2026</td>
-                            <td>Combustível</td>
-                            <td>Abastecimento Posto Central <br><small>Posto BR</small></td>
-                            <td>200,00</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </article>
+                    <!-- Tabela com o histórico detalhado de despesas -->
+                    <table>
+                        <!-- Cabeçalho da tabela (nomes das colunas) -->
+                        <thead>
+                            <tr>
+                                <th>Data</th>
+                                <th>Categoria</th>
+                                <th>Descrição</th>
+                                <th>Valor (R$)</th>
+                            </tr>
+                        </thead>
 
-             <!-- gráfico de despesas -->
+                        <!-- Corpo da tabela (cada <tr> é uma despesa) -->
+                        <tbody>
+                            <tr>
+                                <td>02/10/2026</td>
+                                <td>Combustível</td>
+                                <td>Abastecimento Gasolina Aditivada <br><small>Posto Shell Centro</small></td>
+                                <td>220,00</td>
+                            </tr>
+                            <tr>
+                                <td>10/10/2026</td>
+                                <td>Imposto</td>
+                                <td>Pagamento de Multa de Trânsito <br><small>Órgão Municipal</small></td>
+                                <td>130,16</td>
+                            </tr>
+                            <tr>
+                                <td>18/10/2026</td>
+                                <td>Combustível</td>
+                                <td>Abastecimento Posto Central <br><small>Posto BR</small></td>
+                                <td>200,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+
+                <!-- gráfico de despesas -->
                 <article>
                     <h3>Despesas dos últimos 6 meses</h3>
                     <div class="grafico">
                         <div class="coluna">
-                            <div class="area-barra"><div class="barra-gasto" style="height: 60%;"></div></div>
+                            <div class="area-barra">
+                                <div class="barra-gasto" style="height: 60%;"></div>
+                            </div>
                             <small>Jun-R$240,00</small>
                         </div>
                         <div class="coluna">
-                            <div class="area-barra"><div class="barra-gasto" style="height: 38%;"></div></div>
+                            <div class="area-barra">
+                                <div class="barra-gasto" style="height: 38%;"></div>
+                            </div>
                             <small>Jul-R$182,00</small>
                         </div>
                         <div class="coluna">
-                            <div class="area-barra"><div class="barra-gasto" style="height: 74%;"></div></div>
+                            <div class="area-barra">
+                                <div class="barra-gasto" style="height: 74%;"></div>
+                            </div>
                             <small>Ago-R$296,00</small>
                         </div>
                         <div class="coluna">
-                            <div class="area-barra"><div class="barra-gasto" style="height: 30%;"></div></div>
+                            <div class="area-barra">
+                                <div class="barra-gasto" style="height: 30%;"></div>
+                            </div>
                             <small>Set-R$170,00</small>
                         </div>
                         <div class="coluna">
-                            <div class="area-barra"><div class="barra-gasto" style="height: 100%;"></div></div>
+                            <div class="area-barra">
+                                <div class="barra-gasto" style="height: 100%;"></div>
+                            </div>
                             <small>Out-R$550,16</small>
                         </div>
                         <div class="coluna atual">
-                            <div class="area-barra"><div class="barra-gasto" style="height: 80%;"></div></div>
+                            <div class="area-barra">
+                                <div class="barra-gasto" style="height: 80%;"></div>
+                            </div>
                             <small>Nov-R$400,00</small>
                         </div>
                     </div>
                     <p>Total dos ultimos 6 meses: <strong>R$ [1.838,16]</strong></p>
                 </article>
 
-        </section>
-    </main>
+            </section>
+        </main>
 
-    <!-- Limpa os floats do CSS para o rodapé posicionar corretamente -->
-    <div class="clear"></div>
-    <!-- Rodapé da pagina -->
-    <footer>
-        <p>Auto Care &copy; 2026 - Todos os direitos reservados.</p>
-    </footer>
-</div>
+        <!-- Limpa os floats do CSS para o rodapé posicionar corretamente -->
+        <div class="clear"></div>
+        <!-- Rodapé da pagina -->
+        <footer>
+            <p>Auto Care &copy; 2026 - Todos os direitos reservados.</p>
+        </footer>
+    </div>
 
 
 </body>
+
 </html>
