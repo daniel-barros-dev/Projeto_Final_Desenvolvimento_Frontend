@@ -18,7 +18,7 @@ Por meio de uma aplicação funcional e orientada ao domínio real de gestão ve
 
 ## Páginas
 
-O projeto possui 8 páginas:
+O projeto possui 9 páginas:
 
 - Página inicial
 - Cadastro
@@ -28,13 +28,14 @@ O projeto possui 8 páginas:
 - Documentos
 - Manutenções
 - Registro manutenção
+- Agendamento
 
 
 ## Estrutura 
 
-- `Paginas/` — Páginas do sistema
-- `img/` — Imagens
-- `Codigo_CSS/` — Página de CSS
+- `Paginas/` — Páginas do sistema em html
+- `img/` — Imagem
+- `Codigo_CSS/` — Páginas de CSS
 
 ## 🛠️ Tecnologias Utilizadas
 
