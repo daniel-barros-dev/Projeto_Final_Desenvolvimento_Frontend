@@ -99,11 +99,3 @@ header {
     position: relative;
     min-height: 80px;
 }
-
-.logo-link {
-    position: absolute;
-    top: 20px;
-    left: 40px;
-    display: block;
-    line-height: 0;
-}
